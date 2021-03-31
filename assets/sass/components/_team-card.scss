@@ -1,8 +1,7 @@
 .team-card{
     height: 30vh;
     margin: 2vh auto;
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: flex;
     border-radius: 1rem;
     width: 90%;
     gap: 2rem;
@@ -36,7 +35,7 @@
     }
 
     @media (max-width: 768px) {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        flex-direction: column;
 
         .team-card__info{
             text-align: center;
@@ -46,8 +45,6 @@
 }
 
 .inverted{
-    grid-template-columns: 60% 40%;
-
     img{
         box-shadow: 5px 5px 3px 5px $accent-color;
     }

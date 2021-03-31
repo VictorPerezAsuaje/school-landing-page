@@ -50,7 +50,6 @@ header{
                 
                 &:not(:first-child):hover{
                     color: $primary-color;
-                    transform: scale(1.05,1.05);
                 }
             }
         }

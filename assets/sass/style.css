@@ -69,10 +69,9 @@ html, *, *:before, *:after {
 .team-card {
   height: 30vh;
   margin: 2vh auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 1rem;
   width: 90%;
   gap: 2rem;
@@ -119,8 +118,10 @@ html, *, *:before, *:after {
 
 @media (max-width: 768px) {
   .team-card {
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .team-card .team-card__info {
     text-align: center;
@@ -128,11 +129,6 @@ html, *, *:before, *:after {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-.inverted {
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
 }
 
 .inverted img {
@@ -275,8 +271,6 @@ header nav .menu__item:first-child li #logo {
 
 header nav .menu__item:not(:first-child):hover {
   color: #7868e6;
-  -webkit-transform: scale(1.05, 1.05);
-          transform: scale(1.05, 1.05);
 }
 
 header .burger {
