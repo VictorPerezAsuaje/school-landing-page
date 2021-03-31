@@ -1,0 +1,27 @@
+button{
+    background: none;
+    border: 2px solid $primary-color;
+    padding: 1.5vh 2vw;
+    border-radius: 1rem;
+    color: $primary-color;
+    transition: .3s ease-in-out;
+
+    &.filled{
+        background-color: $primary-color;
+        color: $color-white;
+        
+
+        &:hover{
+            transform: scale(1.05,1.05);
+        }
+    }
+
+    &.big{
+        padding: 3vh 2vw;
+    }
+
+    &:hover{
+        background-color: $primary-color;
+        color: $color-white;
+    }
+}

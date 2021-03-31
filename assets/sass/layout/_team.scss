@@ -1,0 +1,24 @@
+#team{
+    display: grid;
+    padding: 15vh 0;
+
+    hr{
+        grid-column: 5/8;
+        height: 2px;
+        background-color: $primary-color;
+        margin: 2vh 0;
+        opacity: 0.3;
+    }
+
+    .team-card{
+        grid-column: 2/12;
+    }
+
+    @media (max-width: 768px) {
+
+        hr{
+            grid-column: 6/8;
+            margin: 30vh 0 10vh;
+        }
+    }
+}

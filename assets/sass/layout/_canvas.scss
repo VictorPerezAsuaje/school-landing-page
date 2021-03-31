@@ -1,0 +1,24 @@
+.container{
+    width:100%;
+    min-height: 100vh;
+    gap: 1vw;
+    overflow-x: hidden;
+
+    #news,
+    #courses,
+    #team,
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0 auto;
+        min-height: 100vh;
+
+        h2{
+            grid-column: 1/13;
+            font-size: 2rem;
+            text-align: center;
+            color: $dark-color;
+            margin-bottom: 5vh;
+        }
+    }
+}

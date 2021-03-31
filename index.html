@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Sage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="burger">
+                <div class="burger__menu">
+                    <div class="line"></div>
+                </div>
+            </div>   
+            <nav>                             
+                <ul class="menu">
+                    <a href="#home" class="menu__item"><li><img src="images/logo-removebg-preview.png"><h1 id="logo">SAGE<br>INSTITUTE</h1></li></a>
+                    <a href="#news" class="menu__item"><li>NOTICIAS</li></a>
+                    <a href="#courses" class="menu__item"><li>CURSOS</li></a>
+                    <a href="#team" class="menu__item"><li>EQUIPO</li></a>
+                    <a href="#contact" class="menu__item"><li>CONTACTO</li></a>
+                </ul>
+                
+            </nav>
+        </header>
+        <section id="home">
+            <div class="home__purple-square"></div>
+            <div class="home__video">
+                <img src="images/math-teacher.webp">
+                <div class="home__video__overlay"></div>
+                <div class="home__video__play-btn"></div>
+            </div>
+            <h2>‘La educación ayuda a la persona a aprender a ser lo que es capaz de ser .‘</h2>
+            <button id="home-btn" class="big">SABER MÁS</button>
+        </section>
+        <section id="news">
+            <h2>ÚLTIMAS NOTICIAS</h2>
+            <div class="news-list">
+                <div class="card">
+                    <img src="images/hurdles-1503753_1920.jpg">
+                    <h3>Aliquam ultricies vestibulum auctor</h3>
+                    <p>Sed rhoncus imperdiet sapien eu iaculis. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button class="card-btn filled">→</button>
+                </div>
+                <div class="card">
+                    <img src="images/indoors-3255020_1920.jpg">
+                    <h3>Aliquam ultricies vestibulum auctor</h3>
+                    <p>Sed rhoncus imperdiet sapien eu iaculis. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button class="card-btn filled">→</button>
+                </div>
+                <div class="card">
+                    <img src="images/hurdles-1503753_1920.jpg">
+                    <h3>Aliquam ultricies vestibulum auctor</h3>
+                    <p>Sed rhoncus imperdiet sapien eu iaculis. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button class="card-btn filled">→</button>
+                </div>
+            </div>
+        </section>
+        <section id="courses">
+            <h2>CURSOS</h2>
+            <div class="grado">
+                <div class="grado__medio">
+                    <h3>Grado Medio</h3>
+                    <ul>
+                        <li>Sed rhoncus imperdiet sapien eu iaculis.</li>
+                        <li>Maecenas in venenatis erat, et blandit dolor.</li>
+                        <li>Nulla vel hendrerit eros.</li>
+                    </ul>
+                    <button class="btn-knowmore">SABER MÁS</button>
+                </div>
+                <div class="grado__superior">
+                    <h3>Grado Superior</h3>
+                    <ul>
+                        <li>Fusce vitae velit in enim iaculis viverra.</li>
+                        <li>Phasellus a sem a elit vehicula volutpat a eget ligula. </li>
+                        <li>Integer id fringilla nulla, sed eleifend orci.</li>
+                    </ul>
+                    <button class="btn-knowmore">SABER MÁS</button>
+                </div>
+            </div>
+            <div class="courses__image">
+                <div class="purple-rectangle"></div>
+                <img src="images/girl-3718526_1920.jpg">
+            </div>            
+        </section>
+        <section id="team">
+            <h2>CONOCE A NUESTRO EQUIPO</h2>
+            <div class="team-card">
+                <img src="images/person1.jpg">
+                <div class="team-card__info">
+                    <h3>JENNIFER CABEZA BAEZ</h3>
+                    <h4>Directora</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti itaque quidem laudantium, repellendus officiis iure distinctio adipisci, error sit nam! Ex rerum distinctio earum, accusantium doloremque reprehenderit unde quia. </p>
+                </div>
+            </div>
+            <hr>
+            <div class="team-card inverted">
+                <div class="team-card__info">
+                    <h3>ILDEFONSO TEJERO</h3>
+                    <h4>Vice director</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti itaque quidem laudantium, repellendus officiis iure distinctio adipisci, error sit nam! Ex rerum distinctio earum, accusantium doloremque reprehenderit unde quia.</p>
+                </div>
+                <img src="images/person2.jpg">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>CONTACTA CON NOSOTROS</h2>
+            <form action="" id="contact-form">
+                <label for="name" class="form-lbl">NOMBRE COMPLETO</label>
+                <input type="text" name="name" class="form-inpt">
+                <label for="email" class="form-lbl">CORREO ELECTRÓNICO</label>
+                <input type="text" name="email" class="form-inpt">
+                <label for="mensaje" class="form-lbl">MENSAJE</label>
+                <textarea name="mensaje" id="form-msg" cols="30" rows="10"></textarea>
+                <div class="form-btn">
+                    <button id="limpiar">LIMPIAR</button>
+                    <button id="enviar" class="filled">ENVIAR</button>
+                </div>                
+            </form>
+        </section>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

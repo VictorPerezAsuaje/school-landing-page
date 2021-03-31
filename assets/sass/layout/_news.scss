@@ -1,0 +1,29 @@
+#news{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20vh 0;
+
+    .news-list{
+        display: grid;
+        grid-column: 2/12;
+        grid-template-columns: auto auto auto;
+        gap: 2vw;
+        justify-content: center;
+
+        @media(max-width: 768px){
+            & :last-child{
+                display: none;
+            }
+        }
+
+        @media(max-width: 425px){
+            grid-template-columns: auto;
+            margin-top: 4vh;
+
+            .card{
+                margin-bottom: 0vh;
+            }
+        }
+        
+    }
+}

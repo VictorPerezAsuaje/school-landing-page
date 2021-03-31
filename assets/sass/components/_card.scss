@@ -1,0 +1,49 @@
+.card{
+    background-color: rgba(120, 104, 230, 0.2);
+    height: 500px;
+    margin: 10vh 0;
+    display: grid;
+    grid-template-rows: 60% 15% 40%;
+    border-radius: 1rem;
+    position: relative;
+
+    img{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        object-fit: cover;
+        object-position: 90% 10%;
+        width: 100%;
+        height: 250px;
+    }
+
+    h3{
+        padding: 0 1vw;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    p{
+        padding: 0 1.5vw;
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        vertical-align: top;
+    }
+
+    .card-btn{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        color: $color-white;
+        bottom: -20px;
+        right: 20px;
+        font-size: 2rem;
+        padding: 0 0;
+        transition: 200ms ease-in-out;
+
+        &:hover{
+            transform: translate(10px, 0px);
+        }
+    }
+}

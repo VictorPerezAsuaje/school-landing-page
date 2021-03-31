@@ -1,0 +1,112 @@
+#courses{
+    grid-template-rows: auto auto auto;
+    padding: 15vh 0;
+    position: relative;
+    gap: 2rem;
+    
+    .grado{
+        grid-column: 1/6;
+
+        &__medio,
+        &__superior{
+            display: grid;
+            grid-template-rows: auto auto auto;
+            padding-left: 5vw;
+            width: 100%;
+            gap: 2rem;
+
+            h3{
+                font-size: 1.25rem;
+            }
+
+            ul{
+                padding-left: 2vw;
+                list-style-type: none;
+
+                li{
+                    padding: 1vh 0;
+
+                    &:before{
+                        color: $primary-color;
+                        font-size: 1.25rem;
+                        content: '→ ';
+                    }
+                }
+            }
+
+            .btn-knowmore{
+                background: none;
+                border: 2px solid $primary-color;
+                padding: 1.5vh 1vw;
+                border-radius: 12px;
+                color: $primary-color;
+                max-width: 150px;
+                margin-left: auto;
+                margin-bottom: 5vh;
+                font-weight: 600;
+                transition: .5s ease-in-out;
+
+                &:hover{
+                    background-color: $primary-color;
+                    color: $color-white;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            grid-column: 1/13;
+
+            &__medio,
+            &__superior{
+                width: 90%;
+            }
+
+            .btn-knowmore{
+                margin-right: 10vw;
+            }
+        }
+    }
+
+    .courses__image{
+        grid-column: 6/13;
+        height: 60vh;
+        width: 90%;
+        margin-left: auto;
+        position: relative;
+
+        img{
+            object-fit: cover;
+            object-position: 90% 10%;
+            height: 60vh; 
+            width: 100%;
+            padding-left: 10%;          
+        }
+
+        .purple-rectangle{
+            width: 100%;
+            height: 20vh;
+            background-color: $primary-color;
+            position: absolute;
+            border-bottom-left-radius: 1rem;
+            border-top-left-radius: 1rem;
+            bottom: -10vh;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        @media (max-width: 768px) {
+            position: absolute;
+            grid-column: 1/13;
+            bottom: 15vh;
+            z-index: -1;
+            opacity: 0.1;
+            width: 100%;
+
+            img{
+                object-position: 50% 50%;
+            }
+        }
+    }
+    
+}
